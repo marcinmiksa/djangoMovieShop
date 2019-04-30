@@ -7,7 +7,6 @@ class Order(models.Model):
     last_name = models.CharField(max_length=60)
     email = models.EmailField()
     address = models.CharField(max_length=150)
-    postal_code = models.CharField(max_length=30)
     city = models.CharField(max_length=100)
     paid = models.BooleanField(default=False)
 

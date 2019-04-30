@@ -17,7 +17,7 @@
                 {% if cart|length > 0 %}
                     Koszyk:
                     <a href="{% url "cart:cart_detail" %}" style="color: white">
-                        {{ totail_items }} szt. za {{ cart.get_total_price }} PLN
+                        {{ cart.get_total_price }} PLN
                     </a>
                     {% else %}
                     Koszyk jest pusty
